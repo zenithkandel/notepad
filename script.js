@@ -14,3 +14,7 @@ function loadParticles(parent) {
     });
 }
 loadParticles(particles_container);
+
+function loadNotepad(){
+
+}
