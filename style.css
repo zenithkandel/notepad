@@ -82,3 +82,8 @@ Color Pallet:
     opacity: 0.1;
     z-index: -1;
 }
+
+.preloader .particle{
+    position: absolute;
+    transition: transform 10s ease-in-out;
+}
