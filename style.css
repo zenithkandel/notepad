@@ -169,3 +169,14 @@ Color Pallet:
     margin-right: 12px;
     /* color: var(--text-color); */
 }   
+
+
+.editor-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 10%;
+    width: 70%;
+    background: var(--sidebar-color);
+    border: 2px solid red;
+}
