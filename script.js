@@ -1,7 +1,13 @@
 const particles_container = document.querySelector('.particles');
 // initialize particle position before animating
 loadParticles(particles_container);
+setTimeout(() => {
+Array.from(particles_container.getElementsByClassName('particle')).forEach(particle => {
+    particle.style.transition = 'all 50s linear';
+});
+    loadParticles(particles_container);
 
+}, 1000);
 // animate the particles position every 10 seconds
 function loadParticles(parent) {
     const containerWidth = parent.offsetWidth;
@@ -19,4 +25,4 @@ function loadParticles(parent) {
 
 setInterval(() => {
     loadParticles(particles_container);
-}, 10000);
+}, 50000);
