@@ -333,7 +333,7 @@
     <title>Notepad</title>
   </head>
   <body>
-    <div class="preloader">
+    <div class="preloader" style="display: none;">
       <div class="particles">
         <i class="particle fa-sharp fa-light fa-book-open-lines"></i>
         <i class="particle fa-sharp fa-light fa-pen"></i>
@@ -352,7 +352,16 @@
           handle multiple files at once. It autosaves your documents every 30
           seconds. It can export your information in text format.
     </p>
-      <button class="start"><i class="fa-sharp-duotone fa-light fa-cog"></i>Load Notepad</button>
+      <button onclick="loadNotepad()" class="start"><i class="fa-sharp-duotone fa-light fa-cog"></i>Load Notepad</button>
+    </div>
+    <div class="notepad" style="display: block;">
+<div class="floater">
+  <div class="side-nav"></div>
+  <div class="editor">
+    <div class="editor-nav"></div>
+    <div class="editor-main"></div>
+  </div>
+</div>
     </div>
   </body>
   <script src="script.js"></script>

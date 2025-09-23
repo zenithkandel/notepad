@@ -16,5 +16,6 @@ function loadParticles(parent) {
 loadParticles(particles_container);
 
 function loadNotepad(){
-
+    document.querySelector('.preloader').style.display = 'none';
+    document.querySelector('.notepad').style.display = 'block';
 }
