@@ -85,5 +85,4 @@ Color Pallet:
 
 .preloader .particle{
     position: absolute;
-    transition: transform 10s ease-in-out;
 }
