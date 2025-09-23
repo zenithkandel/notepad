@@ -8,6 +8,14 @@ Color Pallet:
 #48484A (A medium dark gray for subtle separation lines)
 */
 
+:root{
+    --bg-color: #1A1A1A;
+    --sidebar-color: #2C2C2E;
+    --primary-color: #0A84FF;
+    --secondary-color: #64D2FF;
+    --text-color: #E0E0E0;
+    --border-color: #48484A;
+}
 
 * {
     margin: 0;
