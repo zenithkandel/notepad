@@ -9,7 +9,7 @@ function loadParticles(parent) {
     const particles = parent.getElementsByClassName('particle');
     console.log(particles);
     Array.from(particles).forEach(particle => {
-        particle.style.fontSize = Math.random() * 32 + 20 + 'px';
+        particle.style.fontSize = Math.random() * 50 + 40 + 'px';
         // particle.style.color = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
         newX = Math.random() * containerWidth;
         newY = Math.random() * containerHeight;
