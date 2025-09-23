@@ -15,6 +15,7 @@ Color Pallet:
     --bg-color: #1A1A1A;
     --sidebar-color: #2C2C2E;
     --sidebar-secondary: #454548;
+    --sidebar-tertiary: #2f2f31;
     --primary-color: #0A84FF;
     --secondary-color: #64D2FF;
     --text-color: #E0E0E0;
@@ -114,11 +115,57 @@ Color Pallet:
     top: 0;
     left: 0;
     height: 100%;
-    width: 60px;
+    width: 30%;
     background: var(--sidebar-color);
     border-right: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 12px 0px;
+    box-shadow: var(--sidebar-secondary) 4px 0px 4px 0px;
+    color: white;
 }
+
+.floater .side-nav h2{
+    font-weight: 500;
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-family: poppins;
+}
+
+.floater .side-nav ul{
+    list-style-type: none;
+    /* background: red; */
+    width: 80%;
+    text-align: center;
+}
+
+.floater .side-nav ul li{
+    padding: 20px;
+    padding-left: 10px;
+    width: 100%;
+    text-align: left;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    background: var(--sidebar-secondary);
+    /* margin: 12px; */
+    /* text-align: center; */
+    font-family: 'Nunito', sans-serif;
+    /* text-transform: lowercase; */
+}
+
+.floater .side-nav ul li:hover{
+    background: var(--sidebar-tertiary);
+    box-shadow: 2px 2px 1px 1px var(--border-color);
+    border: 1px solid var(--border-color);
+    /* color: var(--bg-color); */
+}
+
+.floater .side-nav ul li i{
+    margin-right: 12px;
+    /* color: var(--text-color); */
+}   
