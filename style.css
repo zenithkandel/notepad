@@ -14,6 +14,7 @@ Color Pallet:
 :root {
     --bg-color: #1A1A1A;
     --sidebar-color: #2C2C2E;
+    --sidebar-secondary: #454548;
     --primary-color: #0A84FF;
     --secondary-color: #64D2FF;
     --text-color: #E0E0E0;
@@ -24,5 +25,50 @@ Color Pallet:
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Zorque-Regular', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Nunito;
+    transition: all 0.3s ease;
+}
+
+.preloader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+    box-sizing: border-box;
+    color: var(--text-color);
+    padding: 40px;
+}
+
+.preloader p{
+    margin: 32px;
+}
+
+.preloader button{
+    padding: 12px 24px;
+    background: var(--sidebar-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 16px;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--sidebar-secondary) 10px 10px 0px 0px;
+}
+
+.preloader button:hover{
+    box-shadow: var(--sidebar-color) 8px 8px 0px 0px;
+
+    background: var(--sidebar-secondary);
+    /* color: #2C2C2E; */
+}
+
+.preloader button i{
+    margin-right: 12px;
 }
